@@ -20,6 +20,7 @@ public class User {
 
     private String name;
     private String surname;
+    private String title;
     private String email;
     private String phone;
     private String about;
@@ -31,10 +32,11 @@ public class User {
     public User() {
     }
 
-    public User(Long id, String name, String surname, String email, String phone, String about, String photo, String username, String password, int Province_id) {
+    public User(Long id, String name, String surname, String title, String email, String phone, String about, String photo, String username, String password, int Province_id) {
         this.id = id;
         this.name = name;
         this.surname = surname;
+        this.title = title;
         this.email = email;
         this.phone = phone;
         this.about = about;

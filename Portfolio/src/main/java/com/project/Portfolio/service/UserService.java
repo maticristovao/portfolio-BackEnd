@@ -27,6 +27,9 @@ public class UserService implements IUserService {
         if (updatedUser.getSurname() != null) {
             existingUser.setSurname(updatedUser.getSurname());
         }
+        if (updatedUser.getTitle() != null) {
+            existingUser.setTitle(updatedUser.getTitle());
+        }
         if (updatedUser.getEmail() != null) {
             existingUser.setEmail(updatedUser.getEmail());
         }
