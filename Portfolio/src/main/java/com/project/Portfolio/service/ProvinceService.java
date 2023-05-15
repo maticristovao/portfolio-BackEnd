@@ -5,8 +5,10 @@ import com.project.Portfolio.repository.ProvinceRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@Transactional
 public class ProvinceService implements IProvinceService {
 
     @Autowired

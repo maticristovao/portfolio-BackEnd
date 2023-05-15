@@ -5,8 +5,10 @@ import com.project.Portfolio.model.User;
 import com.project.Portfolio.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@Transactional
 public class UserService implements IUserService {
 
     @Autowired
