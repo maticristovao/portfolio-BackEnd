@@ -14,7 +14,7 @@ public class AreaService implements IAreaService {
 
     @Override
     public List<Area> getAreas() {
-        List<Area> areaList = areaRepo.findAll();
+        List<Area> areaList = areaRepo.findAllByOrderByName();
         return areaList;
     }
 

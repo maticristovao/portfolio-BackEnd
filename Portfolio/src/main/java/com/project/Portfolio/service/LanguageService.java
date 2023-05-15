@@ -14,7 +14,7 @@ public class LanguageService implements ILanguageService {
     
     @Override
     public List<Language> getLanguages() {
-        return langRepo.findAll();
+        return langRepo.findAllByOrderByOralDesc();
     }
     
     @Override

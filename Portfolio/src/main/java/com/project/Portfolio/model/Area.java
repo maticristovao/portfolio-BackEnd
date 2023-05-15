@@ -16,8 +16,10 @@ public class Area {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private String name;
 
-    private final String name;
+    public Area() {
+    }
 
     public Area(Long id, String name) {
         this.id = id;

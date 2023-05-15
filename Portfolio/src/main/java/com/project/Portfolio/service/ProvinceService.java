@@ -17,4 +17,9 @@ public class ProvinceService implements IProvinceService {
         return provRepo.findAll();
     }
 
+    @Override
+    public List<Province> getProvincesByCountryId(Long id) {
+        return provRepo.findByCountry_IdOrderByName(id);
+    }
+
 }

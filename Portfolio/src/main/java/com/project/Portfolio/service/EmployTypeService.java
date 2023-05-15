@@ -14,7 +14,7 @@ public class EmployTypeService implements IEmployTypeService {
 
     @Override
     public List<EmployType> getEmployTypes() {
-        return employRepo.findAll();
+        return employRepo.findAllByOrderByName();
     }
 
 }
