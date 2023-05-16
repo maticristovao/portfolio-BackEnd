@@ -8,7 +8,7 @@ Este es el repositorio del Back-End para mi portfolio personal. Proporciona una 
 - Proporciona endpoints RESTful para interactuar con la API.
 - Base de datos MySQL alojada en Clever Cloud para almacenar la información.
 
-## Elementos
+## Estructura del proyecto
 En src/main se encuentran las clases creadas para este proyecto.
 
 /controller 
