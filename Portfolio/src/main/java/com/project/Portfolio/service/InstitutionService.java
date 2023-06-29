@@ -19,4 +19,19 @@ public class InstitutionService implements IInstitutionService {
         return instRepo.findAllByOrderByName();
     }
 
+    @Override
+    public Institution addInstitution(Institution inst) {
+        return instRepo.save(inst);
+    }
+
+    @Override
+    public Institution updateInstitution(Institution inst) {
+        return instRepo.save(inst);
+    }
+
+    @Override
+    public void deleteInstitution(Long id) {
+        instRepo.deleteById(id);
+    }
+
 }
